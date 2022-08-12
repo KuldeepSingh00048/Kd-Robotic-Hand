@@ -1,0 +1,209 @@
+<!Doctype html>
+<head>
+<Title> Robotic Hand</Title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+
+    }
+    .navbar{
+        display: flex;
+        padding: 10px;
+        background-color: rgb(241, 74, 37);
+        position: sticky;
+        top: 0px;
+        /* border: 2px solid red; */
+        /* margin: 0px 20px; */
+    }
+    .navbar img{
+        height: 70px;
+        width: 70px;
+    }
+    .heading{
+        margin-left: 600px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .part1{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(79, 79, 4); */
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+        background-color:  rgb(240, 218, 213); 
+    }
+    .content{
+        box-shadow: 2px 2px 20px black;
+        border-radius: 15px;
+        border-bottom: 4px solid  rgb(241, 74, 37);
+        background-color: rgb(246, 244, 241);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        /* width: auto; */
+        /* height: auto; */
+        /* padding: 10px; */        
+    }
+    .content h1{
+        width: auto;
+        font-size: 35px;
+        margin: 10px 0px;
+    }
+    .content .about{
+        padding: 10px;
+        font-size: 25px;
+        text-align:justify;
+        margin: 10px 0px;
+    }
+    .part2{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(138, 14, 134); */
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+        background-color:  rgb(240, 218, 213);
+    }
+    .part2 video{
+        margin: 20px 0px;
+        height: 400px;
+        width: 600px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 20px black;
+    }
+    .part2 img{
+        margin: 20px 0px;
+        height: 400px;
+        width: 600px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 20px black;
+    }
+    .content2 h1{
+        margin: 20px 0px;
+        font-size: 30px;
+        /* color: aqua;  */
+    }
+    .content2{
+        box-shadow: 2px 2px 20px black;
+        border-radius: 15px;
+        border: 4px solid  rgb(241, 74, 37);
+        background-color: rgb(246, 244, 241);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        /* width: auto; */
+        /* height: auto; */
+    }
+    .part3{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(138, 14, 134); */
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0px;
+        background-color:  rgb(240, 218, 213);
+    }
+    .content3{
+        box-shadow: 2px 2px 20px black;
+        border-radius: 15px;
+        /* border: 4px solid  aqua; */
+        background-color: rgb(246, 244, 241);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        height: auto;
+        /* width: auto; */
+    }
+    .content3 h1{
+        margin: 20px 0px;
+        font-size: 30px;
+        /* color: aqua;  */
+    }
+    .content3 img{
+        margin: 20px 0px;
+        height: auto;
+        color: rgb(241, 74, 37);
+        background-color: rgb(0, 0, 0);
+        width: 600px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 20px black;
+
+    }
+    .content3 a{
+        margin: 20px 0px;
+        padding: 10px;
+        font-weight: bolder;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: rgb(8, 49, 174);
+        box-shadow: 2px 2px 20px black;
+    }
+    @media only screen and (max-width: 1100px){
+        .heading{
+         margin-left: 350px;
+        }
+
+    }
+</style>
+
+</head>
+<body>
+    <nav>
+        <nav  class='navbar'>
+            <img  src="robot.jpg">
+            <div class="heading">Robotic Hand</div>
+    </nav>
+    <section class="part1">
+      <div class="content">
+           <h1>About this Project</h1>
+           <div class="about">
+            This project is about robotics, we make just  a supplement of robot's 
+            body part that its  hand. It will work by copying our hand. We will move our
+             finger in front of webcam  then it take our finger movement as input and work in
+              respective manner.
+             The  robotic hand is made up of a prosthetic hand with the help of  3d printer.
+             <br>
+             <br>
+             The methodology of this project is to enable robots to perform such a intellectual task 
+             such as decision making, problem solving perception understanding and human communication,<br>
+             To replace human effort from:<br>
+                 1.Repetitive tasks<br>
+                 2.Human critical life in surgery , space missions, etc.<br>
+                 3.Making health care domain  more efficient
+           </div>
+      </div>
+    </section>
+    <section class="part2">
+      <div class="content2">
+           <h1>Lets have look into this(ignore audio)</h1>
+           <video controls="controls">
+            <source src="hand.mp4" type="video/mp4">
+           </video>
+           <h1>This is the dummy hand made by us <br>using Blender and 3-d Printer</h1>
+           <img src="dummy.jpg">
+
+      </div>
+    </section>
+    <section class="part3">
+      <div class="content3">
+           <h1>Code Snippets available on Github Repository below image</h1>
+           <img src="code.png">
+           <a href="#">Robotic-Hand.py</a>
+      </div>
+    </section>
+</body>
+</html>
